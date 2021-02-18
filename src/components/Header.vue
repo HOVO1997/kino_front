@@ -6,16 +6,20 @@
           <div class="col-12">
             <div class="header__content">
               <!-- header logo -->
+              <router-link :to="{name: 'home'}">
               <a href="#" class="header__logo">
                 <img src="../assets/img/logo.svg" alt="">
               </a>
+              </router-link>
               <!-- end header logo -->
 
               <!-- header nav -->
               <ul class="header__nav">
                 <!-- dropdown -->
                 <li class="header__nav-item">
-                  <a class="header__nav-link" href="http://127.0.0.1:8080/" role="button"  aria-haspopup="true" aria-expanded="false">Home</a>
+                  <router-link :to="{name: 'home'}">
+                  <a class="header__nav-link" href="#"  role="button"  aria-haspopup="true" aria-expanded="false">Home</a>
+                  </router-link>
                 </li>
                 <!-- end dropdown -->
 
@@ -44,8 +48,17 @@
 
                   <ul class="dropdown-menu header__dropdown-menu" aria-labelledby="dropdownMenuMore">
                     <li><a href="about.html">About</a></li>
-                    <li><a href="signin.html">Sign In</a></li>
-                    <li><a href="signup.html">Sign Up</a></li>
+
+                    <li>
+                      <router-link :to="{name: 'login'}">
+                      <a href="#">Sign In</a>
+                      </router-link>
+                    </li>
+                    <li>
+                      <router-link :to="{name: 'register'}">
+                      <a href="#">Sign Up</a>
+                        </router-link>
+                    </li>
                   </ul>
                 </li>
                 <!-- end dropdown -->
@@ -58,10 +71,12 @@
                   <i class="fas fa-search"></i>
                 </button>
 
-                <a href="signin.html" class="header__sign-in">
+                <router-link :to="{name: 'login'}">
+                <a href="#" class="header__sign-in">
                   <i class="icon ion-ios-log-in"></i>
                   <span>sign in</span>
                 </a>
+                </router-link>
               </div>
               <!-- end header auth -->
 
