@@ -15,12 +15,7 @@
               <ul class="header__nav">
                 <!-- dropdown -->
                 <li class="header__nav-item">
-                  <a class="dropdown-toggle header__nav-link" href="#" role="button" id="dropdownMenuHome" data-toggle="dropdown" aria-haspopup="true" aria-expanded="false">Home</a>
-
-                  <ul class="dropdown-menu header__dropdown-menu" aria-labelledby="dropdownMenuHome">
-                    <li><a href="#">Home slideshow bg</a></li>
-                    <li><a href="#">Home static bg</a></li>
-                  </ul>
+                  <a class="header__nav-link" href="http://127.0.0.1:8080/" role="button"  aria-haspopup="true" aria-expanded="false">Home</a>
                 </li>
                 <!-- end dropdown -->
 
@@ -31,8 +26,6 @@
                   <ul class="dropdown-menu header__dropdown-menu" aria-labelledby="dropdownMenuCatalog">
                     <li><a href="catalog1.html">Catalog Grid</a></li>
                     <li><a href="catalog2.html">Catalog List</a></li>
-                    <li><a href="details1.html">Details Movie</a></li>
-                    <li><a href="details2.html">Details TV Series</a></li>
                   </ul>
                 </li>
                 <!-- end dropdown -->
@@ -47,13 +40,12 @@
 
                 <!-- dropdown -->
                 <li class="dropdown header__nav-item">
-                  <a class="dropdown-toggle header__nav-link header__nav-link--more" href="#" role="button" id="dropdownMenuMore" data-toggle="dropdown" aria-haspopup="true" aria-expanded="false"><i class="fas fa-ellipsis-h"></i></a>
+                  <a class="header__nav-link header__nav-link--more" href="#" role="button" id="dropdownMenuMore" data-toggle="dropdown" aria-haspopup="true" aria-expanded="false"><i class="fas fa-ellipsis-h"></i></a>
 
                   <ul class="dropdown-menu header__dropdown-menu" aria-labelledby="dropdownMenuMore">
                     <li><a href="about.html">About</a></li>
                     <li><a href="signin.html">Sign In</a></li>
                     <li><a href="signup.html">Sign Up</a></li>
-                    <li><a href="404.html">404 Page</a></li>
                   </ul>
                 </li>
                 <!-- end dropdown -->
