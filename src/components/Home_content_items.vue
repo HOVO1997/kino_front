@@ -26,7 +26,7 @@
 											</span>
 
                     <div class="card__wrap">
-                      <span class="card__rate"><i class="fas fa-star"></i>8.4</span>
+                      <span class="card__rate"><i class="fas fa-star color"></i>8.4</span>
 
                       <ul class="card__list">
                         <li>HD</li>
@@ -68,7 +68,7 @@
 											</span>
 
                     <div class="card__wrap">
-                      <span class="card__rate"><i class="fas fa-star"></i>7.1</span>
+                      <span class="card__rate"><i class="fas fa-star color"></i>7.1</span>
 
                       <ul class="card__list">
                         <li>HD</li>
@@ -111,7 +111,7 @@
 											</span>
 
                     <div class="card__wrap">
-                      <span class="card__rate"><i class="fas fa-star"></i>6.3</span>
+                      <span class="card__rate"><i class="fas fa-star color"></i>6.3</span>
 
                       <ul class="card__list">
                         <li>HD</li>
@@ -154,7 +154,7 @@
 											</span>
 
                     <div class="card__wrap">
-                      <span class="card__rate"><i class="fas fa-star"></i>7.9</span>
+                      <span class="card__rate"><i class="fas fa-star color"></i>7.9</span>
 
                       <ul class="card__list">
                         <li>HD</li>
@@ -197,7 +197,7 @@
 											</span>
 
                     <div class="card__wrap">
-                      <span class="card__rate"><i class="fas fa-star"></i>8.4</span>
+                      <span class="card__rate"><i class="fas fa-star color"></i>8.4</span>
 
                       <ul class="card__list">
                         <li>HD</li>
@@ -239,7 +239,7 @@
 											</span>
 
                     <div class="card__wrap">
-                      <span class="card__rate"><i class="fas fa-star"></i>7.1</span>
+                      <span class="card__rate"><i class="fas fa-star color"></i>7.1</span>
 
                       <ul class="card__list">
                         <li>HD</li>
@@ -278,5 +278,9 @@ export default {
 .card{
   background: transparent;
   border: none;
+}
+.color{
+  color: #FF5682;
+  margin-right: 5px;
 }
 </style>

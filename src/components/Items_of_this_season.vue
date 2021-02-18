@@ -169,7 +169,4 @@ i {
   color: #FF5682;
   margin-right: 5px;
 }
-.owl-stage{
-  /*margin-left: 281px;*/
-}
 </style>

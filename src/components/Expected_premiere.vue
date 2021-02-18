@@ -24,7 +24,7 @@
 								<a href="#">Action</a>
 								<a href="#">Triler</a>
 							</span>
-              <span class="card__rate"><i class="fas fa-star"></i>8.4</span>
+              <span class="card__rate"><i class="fas fa-star color"></i>8.4</span>
             </div>
           </div>
         </div>
@@ -44,7 +44,7 @@
               <span class="card__category">
 								<a href="#">Comedy</a>
 							</span>
-              <span class="card__rate"><i class="fas fa-star"></i>7.1</span>
+              <span class="card__rate"><i class="fas fa-star color"></i>7.1</span>
             </div>
           </div>
         </div>
@@ -66,7 +66,7 @@
 								<a href="#">Drama</a>
 								<a href="#">Music</a>
 							</span>
-              <span class="card__rate"><i class="fas fa-star"></i>6.3</span>
+              <span class="card__rate"><i class="fas fa-star color"></i>6.3</span>
             </div>
           </div>
         </div>
@@ -87,7 +87,7 @@
 								<a href="#">Comedy</a>
 								<a href="#">Drama</a>
 							</span>
-              <span class="card__rate"><i class="fas fa-star"></i>7.9</span>
+              <span class="card__rate"><i class="fas fa-star color"></i>7.9</span>
             </div>
           </div>
         </div>
@@ -128,7 +128,7 @@
               <span class="card__category">
 								<a href="#">Comedy</a>
 							</span>
-              <span class="card__rate"><i class="fas fa-star"></i>7.1</span>
+              <span class="card__rate"><i class="fas fa-star color"></i>7.1</span>
             </div>
           </div>
         </div>
@@ -159,5 +159,9 @@ export default {
 .card{
   background: transparent;
   border: none;
+}
+.color{
+  color: #FF5682;
+  margin-right: 5px;
 }
 </style>
