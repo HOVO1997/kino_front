@@ -29,7 +29,7 @@
 
               <button class="sign__btn" type="button">Sign up</button>
 
-              <span class="sign__text">Already have an account? <a href="signin.html">Sign in!</a></span>
+              <span class="sign__text">Already have an account? <router-link :to="{name: 'login'}"><a href="#">Sign in!</a></router-link> </span>
             </form>
             <!-- registration form -->
           </div>

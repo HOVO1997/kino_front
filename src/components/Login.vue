@@ -25,7 +25,7 @@
 
               <button class="sign__btn" type="button">Sign in</button>
 
-              <span class="sign__text">Don't have an account? <a href="signup.html">Sign up!</a></span>
+              <span class="sign__text">Don't have an account? <router-link :to="{name: 'register'}"><a href="#">Sign up!</a></router-link> </span>
 
               <span class="sign__text"><a href="#">Forgot password?</a></span>
             </form>

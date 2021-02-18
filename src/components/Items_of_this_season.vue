@@ -49,14 +49,17 @@
 
         <div class="col-12">
           <div class="owl-carousel home__carousel">
+
             <div class="item">
               <!-- card -->
               <div class="card card--big">
                 <div class="card__cover">
                   <img src="../assets/img/covers/cover.jpg" alt="">
+                  <router-link :to="{name: 'show'}">
                   <a href="#" class="card__play">
                     <i class="fas fa-play"></i>
                   </a>
+                  </router-link>
                 </div>
                 <div class="card__content">
                   <h3 class="card__title"><a href="#">I Dream in Another Language</a></h3>
@@ -75,9 +78,11 @@
               <div class="card card--big">
                 <div class="card__cover">
                   <img src="../assets/img/covers/cover2.jpg" alt="">
+                  <router-link :to="{name: 'show'}">
                   <a href="#" class="card__play">
                     <i class="fas fa-play"></i>
                   </a>
+                  </router-link>
                 </div>
                 <div class="card__content">
                   <h3 class="card__title"><a href="#">Benched</a></h3>
@@ -95,9 +100,11 @@
               <div class="card card--big">
                 <div class="card__cover">
                   <img src="../assets/img/covers/cover3.jpg" alt="">
+                  <router-link :to="{name: 'show'}">
                   <a href="#" class="card__play">
                     <i class="fas fa-play"></i>
                   </a>
+                  </router-link>
                 </div>
                 <div class="card__content">
                   <h3 class="card__title"><a href="#">Whitney</a></h3>
@@ -116,9 +123,11 @@
               <div class="card card--big">
                 <div class="card__cover">
                   <img src="../assets/img/covers/cover4.jpg" alt="">
+                  <router-link :to="{name: 'show'}">
                   <a href="#" class="card__play">
                     <i class="fas fa-play"></i>
                   </a>
+                  </router-link>
                 </div>
                 <div class="card__content">
                   <h3 class="card__title"><a href="#">Blindspotting</a></h3>
@@ -131,6 +140,9 @@
               </div>
               <!-- end card -->
             </div>
+
+
+
           </div>
         </div>
       </div>
