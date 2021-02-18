@@ -1,22 +1,7 @@
 <template>
   <div>
     <Header></Header>
-    <div>
-      <p>lorem</p>
-      <p>lorem</p>
-      <p>lorem</p>
-      <p>lorem</p>
-      <p>lorem</p>
-      <p>lorem</p>
-      <p>lorem</p>
-      <p>lorem</p>
-      <p>lorem</p>
-      <p>lorem</p>
-      <p>lorem</p>
-      <p>lorem</p>
-      <p>lorem</p>
-      <p>lorem</p>
-    </div>
+  <Items_of_this_season></Items_of_this_season>
     <Footer></Footer>
   </div>
 </template>
@@ -24,10 +9,11 @@
 <script>
 import Header from "@/components/Header";
 import Footer from "@/components/Footer";
+import Items_of_this_season from "@/components/Items_of_this_season";
 
 export default {
   name: 'App',
-  components: {Footer, Header},
+  components: {Items_of_this_season, Footer, Header},
 }
 </script>
 
