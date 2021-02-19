@@ -1,6 +1,7 @@
 <template>
-  <div class="page-404 section--bg" :data-bg="image"
-       style="background: url(..assets/img/section/section.jpg) center center / cover no-repeat;">
+  <div class="page-404 section--bg"
+       v-bind:style="{ backgroundImage: 'url(' + image + ') enter center / cover no-repeat; ' }">
+    <!--       style="background: url(..assets/img/section/section.jpg) center center / cover no-repeat;"-->
     <div class="container">
       <div class="row">
         <div class="col-12">
@@ -21,7 +22,7 @@
 
 <script>
 export default {
-  name: "404",
+  name: "Notfound",
   data() {
     return {
       image: require('@/assets/img/section/section.jpg'),

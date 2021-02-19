@@ -1,5 +1,5 @@
 <template>
-  <div class="sign section--bg" :data-bg="image" style="background: url(../src/assets/img/section/section.jpg) center center / cover no-repeat;">
+  <div class="sign section--bg"  id="bg_div">
     <div class="container">
       <div class="row">
         <div class="col-12">
@@ -51,5 +51,8 @@ name: "Login",
 <style scoped>
 .sign__group--checkbox input:not(:checked) + label:after, .sign__group--checkbox input:checked + label:after {
   content: '✓';
+}
+#bg_div{
+  background: url(../assets/img/section/section.jpg) center center / cover no-repeat;
 }
 </style>

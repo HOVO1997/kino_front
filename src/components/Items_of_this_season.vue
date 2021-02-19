@@ -8,20 +8,16 @@
         <div class="owl-stage"
              style="transform: translate3d(-3038px, 0px, 0px); transition: all 0s ease 0s; width: 12154px;">
           <div class="owl-item cloned" style="width: 1519.2px;">
-            <div class="item home__cover" :data-bg="image1"
-                 style="background: url(../src/assets/img/home/home__bg3.jpg) center center / cover no-repeat; height: 692.575px;"></div>
+            <div class="item home__cover" id="bg_1"></div>
           </div>
           <div class="owl-item cloned" style="width: 1519.2px;">
-            <div class="item home__cover" :data-bg="image2"
-                 style="background: url(&quot;../assets/img/home/home__bg4.jpg&quot;) center center / cover no-repeat; height: 692.575px;"></div>
+            <div class="item home__cover" id="bg_2"></div>
           </div>
           <div class="owl-item active" style="width: 1519.2px;">
-            <div class="item home__cover" :data-bg="image3"
-                 style="background: url(&quot;../assets/img/home/home__bg.jpg&quot;) center center / cover no-repeat; height: 692.575px;"></div>
+            <div class="item home__cover" id="bg_3"></div>
           </div>
           <div class="owl-item" style="width: 1519.2px;">
-            <div class="item home__cover" :data-bg="image4"
-                 style="background: url(&quot;../assets/img/home/home__bg2.jpg&quot;) center center / cover no-repeat; height: 692.575px;"></div>
+            <div class="item home__cover" id="bg_4"></div>
           </div>
         </div>
       </div>
@@ -56,9 +52,9 @@
                 <div class="card__cover">
                   <img src="../assets/img/covers/cover.jpg" alt="">
                   <router-link :to="{name: 'show'}">
-                  <a href="#" class="card__play">
-                    <i class="fas fa-play"></i>
-                  </a>
+                    <a href="#" class="card__play">
+                      <i class="fas fa-play"></i>
+                    </a>
                   </router-link>
                 </div>
                 <div class="card__content">
@@ -79,9 +75,9 @@
                 <div class="card__cover">
                   <img src="../assets/img/covers/cover2.jpg" alt="">
                   <router-link :to="{name: 'show'}">
-                  <a href="#" class="card__play">
-                    <i class="fas fa-play"></i>
-                  </a>
+                    <a href="#" class="card__play">
+                      <i class="fas fa-play"></i>
+                    </a>
                   </router-link>
                 </div>
                 <div class="card__content">
@@ -101,9 +97,9 @@
                 <div class="card__cover">
                   <img src="../assets/img/covers/cover3.jpg" alt="">
                   <router-link :to="{name: 'show'}">
-                  <a href="#" class="card__play">
-                    <i class="fas fa-play"></i>
-                  </a>
+                    <a href="#" class="card__play">
+                      <i class="fas fa-play"></i>
+                    </a>
                   </router-link>
                 </div>
                 <div class="card__content">
@@ -124,9 +120,9 @@
                 <div class="card__cover">
                   <img src="../assets/img/covers/cover4.jpg" alt="">
                   <router-link :to="{name: 'show'}">
-                  <a href="#" class="card__play">
-                    <i class="fas fa-play"></i>
-                  </a>
+                    <a href="#" class="card__play">
+                      <i class="fas fa-play"></i>
+                    </a>
                   </router-link>
                 </div>
                 <div class="card__content">
@@ -140,7 +136,6 @@
               </div>
               <!-- end card -->
             </div>
-
 
 
           </div>
@@ -174,11 +169,30 @@ i {
   text-shadow: 0 0 6px rgb(255 88 96);
   margin-right: 5px;
 }
-.home__nav{
-    top: 3%;
+
+.home__nav {
+  top: 3%;
 }
-.color{
+
+.color {
   color: #FF5682;
   margin-right: 5px;
+}
+
+#bg_1{
+  background: url(../assets/img/home/home__bg.jpg) center center / cover no-repeat;
+  height: 680px !important;
+}
+#bg_2{
+  background: url(../assets/img/home/home__bg2.jpg) center center / cover no-repeat;
+  height: 680px !important;
+}
+#bg_3{
+  background: url(../assets/img/home/home__bg3.jpg) center center / cover no-repeat;
+  height: 680px !important;
+}
+#bg_4{
+  background: url(../assets/img/home/home__bg4.jpg) center center / cover no-repeat;
+  height: 680px !important;
 }
 </style>

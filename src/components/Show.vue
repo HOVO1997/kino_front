@@ -4,8 +4,7 @@
 
     <section class="section details">
       <!-- details background -->
-      <div class="details__bg" :data-bg="image"
-           style="background: url(../assets/img/home/home__bg.jpg) center center / cover no-repeat;"></div>
+      <div class="details__bg" id="bg_div"></div>
       <!-- end details background -->
 
       <!-- details content -->
@@ -157,6 +156,9 @@ export default {
 }
 .b-description_readmore_button:before {
   content: '...';
+}
+#bg_div{
+  background: url(../assets/img/home/home__bg.jpg) center center / cover no-repeat;
 }
 
 </style>

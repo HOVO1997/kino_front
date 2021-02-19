@@ -40,7 +40,7 @@ $(document).ready(function () {
 		items: 1,
 		dots: false,
 		loop: true,
-		autoplay: true,
+		autoplay: false,
 		smartSpeed: 600,
 		margin: 0,
 	});

@@ -1,6 +1,5 @@
 <template>
-  <section class="section section--bg" :data-bg="image"
-           style="background: url(../src/assets/img/section/section.jpg) center center / cover no-repeat;">
+  <section class="section section--bg" id="bg_to_div">
     <div class="container">
       <div class="row">
         <!-- section title -->
@@ -163,5 +162,8 @@ export default {
 .color{
   color: #FF5682;
   margin-right: 5px;
+}
+#bg_to_div{
+  background: url(../assets/img/section/section.jpg) center center / cover no-repeat;
 }
 </style>
