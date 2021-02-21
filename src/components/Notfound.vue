@@ -1,5 +1,5 @@
 <template>
-  <div class="page-404 section--bg" id="bg_div">
+  <div class="page-404 section--bg" id="bg_to_div">
     <div class="container">
       <div class="row">
         <div class="col-12">
@@ -30,7 +30,8 @@ export default {
 </script>
 
 <style scoped>
-#bg_div{
+
+#bg_to_div{
   background: url(../assets/img/section/section.jpg) center center / cover no-repeat;
 }
 </style>

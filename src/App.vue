@@ -5,10 +5,6 @@
 </template>
 
 <script>
-
-
-
-
 export default {
   name: 'App',
   components: {
@@ -17,6 +13,11 @@ export default {
 </script>
 
 <style>
+@import './assets/packages/nouislider.min.css';
+@import './assets/packages/plyr.css';
+@import './assets/packages/photoswipe.css';
+@import './assets/packages/main.css';
+
 .container {
   max-width: 1140px;
 }

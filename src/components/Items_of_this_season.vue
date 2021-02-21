@@ -1,143 +1,31 @@
 <template>
-  <section class="home">
-    <!-- home bg -->
-    <div class="owl-carousel home__bg owl-loaded">
-
-
-      <div class="owl-stage-outer">
-        <div class="owl-stage"
-             style="transform: translate3d(-3038px, 0px, 0px); transition: all 0s ease 0s; width: 12154px;">
-          <div class="owl-item cloned" style="width: 1519.2px;">
-            <div class="item home__cover" id="bg_1"></div>
-          </div>
-          <div class="owl-item cloned" style="width: 1519.2px;">
-            <div class="item home__cover" id="bg_2"></div>
-          </div>
-          <div class="owl-item active" style="width: 1519.2px;">
-            <div class="item home__cover" id="bg_3"></div>
-          </div>
-          <div class="owl-item" style="width: 1519.2px;">
-            <div class="item home__cover" id="bg_4"></div>
-          </div>
-        </div>
-      </div>
-      <div class="owl-nav disabled">
-        <button type="button" role="presentation" class="owl-prev"><span aria-label="Previous">‹</span></button>
-        <button type="button" role="presentation" class="owl-next"><span aria-label="Next">›</span></button>
-      </div>
-      <div class="owl-dots disabled"></div>
-    </div>
-    <!-- end home bg -->
-
+  <section class="home" id="bg_1">
     <div class="container">
       <div class="row">
         <div class="col-12">
-          <h1 class="home__title"><b>NEW ITEMS</b> OF THIS SEASON</h1>
-
-          <button class="home__nav home__nav--prev" type="button">
-            <i class="fas fa-long-arrow-alt-left"></i>
-          </button>
-          <button class="home__nav home__nav--next" type="button">
-            <i class="fas fa-long-arrow-alt-right"></i>
-          </button>
-        </div>
-
-
-        <div class="col-12">
-          <div class="owl-carousel home__carousel">
-
-            <div class="item">
-              <!-- card -->
-              <div class="card card--big">
-                <div class="card__cover">
-                  <img src="../assets/img/covers/cover.jpg" alt="">
-                  <router-link :to="{name: 'show'}">
-                    <a href="#" class="card__play">
-                      <i class="fas fa-play"></i>
-                    </a>
-                  </router-link>
-                </div>
-                <div class="card__content">
-                  <h3 class="card__title"><a href="#">I Dream in Another Language</a></h3>
-                  <span class="card__category">
-										<a href="#">Action</a>
-										<a href="#">Triler</a>
-									</span>
-                  <span class="card__rate"><i class="fas fa-star color"></i>8.4</span>
-                </div>
+          <h1 class="home__title mb-5"><b>NEW ITEMS</b> OF THIS SEASON</h1>
+          <div v-if="films.length > 0">
+        <carousel  :nav="false" :items="4" :autoplay="true" :autoplayHoverPause="true" :autoplayTimeout="3000">
+          <div class="item" v-for="film in films" :key="film['id']">
+            <div class="card" >
+              <div class="card__cover">
+                <img :src="film['image']" alt="">
+                <router-link :to="{name: 'show', params:{id: film['id']}}">
+                  <a href="#" class="card__play">
+                    <i class="fas fa-play"></i>
+                  </a>
+                </router-link>
               </div>
-              <!-- end card -->
-            </div>
-
-            <div class="item">
-              <!-- card -->
-              <div class="card card--big">
-                <div class="card__cover">
-                  <img src="../assets/img/covers/cover2.jpg" alt="">
-                  <router-link :to="{name: 'show'}">
-                    <a href="#" class="card__play">
-                      <i class="fas fa-play"></i>
-                    </a>
-                  </router-link>
-                </div>
-                <div class="card__content">
-                  <h3 class="card__title"><a href="#">Benched</a></h3>
-                  <span class="card__category">
-										<a href="#">Comedy</a>
+              <div class="card__content">
+                <h3 class="card__title"><a href="#">{{ film['name'] }}</a></h3>
+                <span class="card__category">
+										<a href="#" v-for="film_genre in film['genre']" :key="film_genre['id']">{{ film_genre['genre'].toUpperCase() }}</a>
 									</span>
-                  <span class="card__rate"><i class="fas fa-star color"></i>7.1</span>
-                </div>
+                <span class="card__rate"><i class="fas fa-star color"></i>{{ film['rating'] }}</span>
               </div>
-              <!-- end card -->
             </div>
-
-            <div class="item">
-              <!-- card -->
-              <div class="card card--big">
-                <div class="card__cover">
-                  <img src="../assets/img/covers/cover3.jpg" alt="">
-                  <router-link :to="{name: 'show'}">
-                    <a href="#" class="card__play">
-                      <i class="fas fa-play"></i>
-                    </a>
-                  </router-link>
-                </div>
-                <div class="card__content">
-                  <h3 class="card__title"><a href="#">Whitney</a></h3>
-                  <span class="card__category">
-										<a href="#">Romance</a>
-										<a href="#">Drama</a>
-									</span>
-                  <span class="card__rate"><i class="fas fa-star color"></i>6.3</span>
-                </div>
-              </div>
-              <!-- end card -->
-            </div>
-
-            <div class="item">
-              <!-- card -->
-              <div class="card card--big">
-                <div class="card__cover">
-                  <img src="../assets/img/covers/cover4.jpg" alt="">
-                  <router-link :to="{name: 'show'}">
-                    <a href="#" class="card__play">
-                      <i class="fas fa-play"></i>
-                    </a>
-                  </router-link>
-                </div>
-                <div class="card__content">
-                  <h3 class="card__title"><a href="#">Blindspotting</a></h3>
-                  <span class="card__category">
-										<a href="#">Comedy</a>
-										<a href="#">Drama</a>
-									</span>
-                  <span class="card__rate"><i class="fas fa-star color"></i>7.9</span>
-                </div>
-              </div>
-              <!-- end card -->
-            </div>
-
-
+          </div>
+        </carousel>
           </div>
         </div>
       </div>
@@ -146,14 +34,33 @@
 </template>
 
 <script>
+import carousel from 'vue-owl-carousel'
+import axios from "axios";
+
 export default {
   name: "Items_of_this_season",
+  components: { carousel },
   data() {
     return {
-      image1: require('@/assets/img/home/home__bg.jpg'),
-      image2: require('@/assets/img/home/home__bg2.jpg'),
-      image3: require('@/assets/img/home/home__bg3.jpg'),
-      image4: require('@/assets/img/home/home__bg4.jpg'),
+      films: [],
+    }
+  },
+  mounted () {
+    window.scrollTo(0, 0)
+  },
+  created() {
+    this.getLatest();
+  },
+  methods:{
+    getLatest(){
+      axios
+      .get('http://127.0.0.1:8000/api/home')
+      .then(res => {
+       this.films = res.data;
+      })
+      .catch(err => {
+        console.log(err)
+      })
     }
   }
 }
@@ -180,19 +87,13 @@ i {
 }
 
 #bg_1{
-  background: url(../assets/img/home/home__bg.jpg) center center / cover no-repeat;
+  background: url(https://wallscloud.net/uploads/cache/4246659749/wallpaper_by_cybacreep-d7hprs3-1024x576-MM-90.jpg) center center / cover no-repeat;
   height: 680px !important;
 }
-#bg_2{
-  background: url(../assets/img/home/home__bg2.jpg) center center / cover no-repeat;
-  height: 680px !important;
+
+.card{
+  margin-right: 10px;
+  margin-left: 10px;
 }
-#bg_3{
-  background: url(../assets/img/home/home__bg3.jpg) center center / cover no-repeat;
-  height: 680px !important;
-}
-#bg_4{
-  background: url(../assets/img/home/home__bg4.jpg) center center / cover no-repeat;
-  height: 680px !important;
-}
+
 </style>

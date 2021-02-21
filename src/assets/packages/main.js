@@ -40,7 +40,7 @@ $(document).ready(function () {
 		items: 1,
 		dots: false,
 		loop: true,
-		autoplay: false,
+		autoplay: true,
 		smartSpeed: 600,
 		margin: 0,
 	});
@@ -392,11 +392,11 @@ $(document).ready(function () {
 			noUiSlider.create(firstSlider, {
 				range: {
 					'min': 2000,
-					'max': 2018
+					'max': 2021
 				},
 				step: 1,
 				connect: true,
-				start: [2005, 2015],
+				start: [2005, 2019],
 				format: wNumb({
 					decimals: 0,
 				})
