@@ -14,6 +14,7 @@ Vue.config.productionTip = false
 
 Vue.use(VueRouter);
 
+
 const router = new VueRouter({
     mode: 'history',
     routes: [
@@ -21,8 +22,8 @@ const router = new VueRouter({
         {path: '/home', component: Home, name: 'home'},
         {path: '/login', component: Login, name: 'login'},
         {path: '/register', component: Register, name: 'register'},
-        {path: '/show', component: Show, name: 'show'},
-        {path: '/catalog',component: Catalog, name: 'catalog'},
+        {path: '/show/:id', component: Show, name: 'show'},
+        {path: '/catalog/:params?',component: Catalog, name: 'catalog'},
         {path: '/404', name: '404', component: Notfound,},
         {path: '*', redirect: '/404'}
     ]

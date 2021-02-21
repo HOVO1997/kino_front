@@ -43,10 +43,10 @@
 
                 <!-- dropdown -->
                 <li class="dropdown header__nav-item">
-                  <a  class="header__nav-link header__nav-link--more" href="#" role="button" id="dropdownMenuMore"
+                  <a class="header__nav-link header__nav-link--more" href="#" role="button" id="dropdownMenuMore"
                      data-toggle="dropdown" aria-haspopup="true" aria-expanded="false"><i class="fas fa-ellipsis-h"></i></a>
 
-                  <ul  class="dropdown-menu header__dropdown-menu" aria-labelledby="dropdownMenuMore">
+                  <ul class="dropdown-menu header__dropdown-menu" aria-labelledby="dropdownMenuMore">
                     <li><a href="about.html">About</a></li>
 
                     <li>
@@ -99,9 +99,9 @@
         <div class="row">
           <div class="col-12">
             <div class="header__search-content">
-              <input type="text" placeholder="Search for a movie, TV Series that you are looking for">
-
-              <button type="button">search</button>
+              <input v-model="searchVal" type="text"
+                     placeholder="Search for a movie, TV Series that you are looking for">
+              <button type="button" @click="redir()">search</button>
             </div>
           </div>
         </div>
@@ -114,15 +114,22 @@
 <script>
 export default {
   name: "Header",
-  data(){
+  data() {
     return {
       visibility: false,
+      searchVal: '',
     }
   },
-  methods:{
-    search(){
+  methods: {
+    search() {
       this.visibility = !this.visibility;
     },
+    redir() {
+      if (this.$route.path !== '/catalog') {
+        this.$router.push({name: 'catalog', params: {param: this.searchVal}})
+      }
+
+    }
   }
 }
 </script>
